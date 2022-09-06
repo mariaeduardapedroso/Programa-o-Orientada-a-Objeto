@@ -2,28 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package aula8;
+package javaapplication2;
 
 /**
- * SUPERCLASSE
+ *
+ * @author a2152177
  */
-public class Estudante {
-private String nome;
-private String endereco;
-private int matricula;
-private float salario;
-
-public Estudante(String nome){
-    this.nome = nome;
+public class Estudante extends Cliente {
+         private String nome;
+         private String endereco;
+         public Estudante( String nome, String endereco ){
+                   this.nome = nome;
+                   this.endereco = endereco;
+         }
+         public Estudante( String nome, String endereco, Conta conta ){
+                   super( conta );
+                   this.nome = nome;
+                   this.endereco = endereco;
+         }
 }
 
-public Estudante(String nome,float salario){
-    this.nome = nome;
-    this.salario = salario;
-}
-
-public void setNome(String nome){
-    this.nome = nome;
-}
-    
-}

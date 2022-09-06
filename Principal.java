@@ -1,27 +1,21 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package aula8;
+package javaapplication2;
 
-
+/**
+ *
+ * @author a2152177
+ */
 public class Principal {
-    
-    public Principal(){
-        Estagiario jorge = new Estagiario("caralh", "manha");
-        jorge.setNome("madu");
-        
-        Estagiario maria = new Estagiario("mary","caralh", "manha");
-        
-        Estagiario ruan = new Estagiario("ruan","caralh", "manha",2800);
-    }
-    
-        public static void main(String[] args) {
-        Principal principal = new Principal();
-        principal.iniciar();
-        
-    }
 
-    private void iniciar() {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Conta conta = new Conta(123,10000f);
+        Estudante joao = new Estudante("JOAO","blalbal",conta);
     }
+    
 }
